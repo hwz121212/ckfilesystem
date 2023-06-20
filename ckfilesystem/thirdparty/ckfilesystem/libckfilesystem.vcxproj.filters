@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="include\ckfilesystem">
+      <UniqueIdentifier>{ae63c0c0-270f-464e-b40b-3743a47d799e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\dvdvideo.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\eltorito.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\filesystem.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\filesystemhelper.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\filesystemwriter.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\filetree.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iforeader.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iso.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\isopathtable.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\isoreader.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\isowriter.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\joliet.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sectormanager.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sectorstream.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stringtable.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\udf.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\udfwriter.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\isoverifier.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ckfilesystem\const.hh">
+      <Filter>include\ckfilesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ckfilesystem\dvdvideo.hh">
+      <Filter>include\ckfilesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ckfilesystem\eltorito.hh">
+      <Filter>include\ckfilesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ckfilesystem\exception.hh">
+      <Filter>include\ckfilesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ckfilesystem\fileset.hh">
+      <Filter>include\ckfilesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ckfilesystem\filesystem.hh">
+      <Filter>include\ckfilesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ckfilesystem\filesystemhelper.hh">
+      <Filter>include\ckfilesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ckfilesystem\filesystemwriter.hh">
+      <Filter>include\ckfilesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ckfilesystem\filetree.hh">
+      <Filter>include\ckfilesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ckfilesystem\iforeader.hh">
+      <Filter>include\ckfilesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ckfilesystem\iso.hh">
+      <Filter>include\ckfilesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ckfilesystem\isopathtable.hh">
+      <Filter>include\ckfilesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ckfilesystem\isoreader.hh">
+      <Filter>include\ckfilesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ckfilesystem\isoverifier.hh">
+      <Filter>include\ckfilesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ckfilesystem\isowriter.hh">
+      <Filter>include\ckfilesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ckfilesystem\joliet.hh">
+      <Filter>include\ckfilesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ckfilesystem\sectormanager.hh">
+      <Filter>include\ckfilesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ckfilesystem\sectorstream.hh">
+      <Filter>include\ckfilesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ckfilesystem\stringtable.hh">
+      <Filter>include\ckfilesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ckfilesystem\udf.hh">
+      <Filter>include\ckfilesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ckfilesystem\udfwriter.hh">
+      <Filter>include\ckfilesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ckfilesystem\util.hh">
+      <Filter>include\ckfilesystem</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

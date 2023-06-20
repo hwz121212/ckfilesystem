@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>libckfilesystem</ProjectName>
+    <ProjectGuid>{C061FC30-E1F6-4542-B60E-CD245A7A3324}</ProjectGuid>
+    <RootNamespace>ckfilesystem</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(CKCOREDIR)\include\;$(CKROOTDIR)\ckcore\include\;$(SolutionDir)..\ckcore\include\;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(CKCOREDIR)\include\;$(CKROOTDIR)\ckcore\include\;$(SolutionDir)..\ckcore\include\;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(CKCOREDIR)\include\;$(CKROOTDIR)\ckcore\include\;$(SolutionDir)..\ckcore\include\;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(CKCOREDIR)\include\;$(CKROOTDIR)\ckcore\include\;$(SolutionDir)..\ckcore\include\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>include;$(SolutionDir)thirdparty\ckcore\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>include;$(SolutionDir)thirdparty\ckcore\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\dvdvideo.cc" />
+    <ClCompile Include="src\eltorito.cc" />
+    <ClCompile Include="src\filesystem.cc" />
+    <ClCompile Include="src\filesystemhelper.cc" />
+    <ClCompile Include="src\filesystemwriter.cc" />
+    <ClCompile Include="src\filetree.cc" />
+    <ClCompile Include="src\iforeader.cc" />
+    <ClCompile Include="src\iso.cc" />
+    <ClCompile Include="src\isopathtable.cc" />
+    <ClCompile Include="src\isoreader.cc" />
+    <ClCompile Include="src\isoverifier.cc" />
+    <ClCompile Include="src\isowriter.cc" />
+    <ClCompile Include="src\joliet.cc" />
+    <ClCompile Include="src\sectormanager.cc" />
+    <ClCompile Include="src\sectorstream.cc" />
+    <ClCompile Include="src\stringtable.cc" />
+    <ClCompile Include="src\udf.cc" />
+    <ClCompile Include="src\udfwriter.cc" />
+    <ClCompile Include="src\util.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ckfilesystem\const.hh" />
+    <ClInclude Include="include\ckfilesystem\dvdvideo.hh" />
+    <ClInclude Include="include\ckfilesystem\eltorito.hh" />
+    <ClInclude Include="include\ckfilesystem\exception.hh" />
+    <ClInclude Include="include\ckfilesystem\fileset.hh" />
+    <ClInclude Include="include\ckfilesystem\filesystem.hh" />
+    <ClInclude Include="include\ckfilesystem\filesystemhelper.hh" />
+    <ClInclude Include="include\ckfilesystem\filesystemwriter.hh" />
+    <ClInclude Include="include\ckfilesystem\filetree.hh" />
+    <ClInclude Include="include\ckfilesystem\iforeader.hh" />
+    <ClInclude Include="include\ckfilesystem\iso.hh" />
+    <ClInclude Include="include\ckfilesystem\isopathtable.hh" />
+    <ClInclude Include="include\ckfilesystem\isoreader.hh" />
+    <ClInclude Include="include\ckfilesystem\isoverifier.hh" />
+    <ClInclude Include="include\ckfilesystem\isowriter.hh" />
+    <ClInclude Include="include\ckfilesystem\joliet.hh" />
+    <ClInclude Include="include\ckfilesystem\sectormanager.hh" />
+    <ClInclude Include="include\ckfilesystem\sectorstream.hh" />
+    <ClInclude Include="include\ckfilesystem\stringtable.hh" />
+    <ClInclude Include="include\ckfilesystem\udf.hh" />
+    <ClInclude Include="include\ckfilesystem\udfwriter.hh" />
+    <ClInclude Include="include\ckfilesystem\util.hh" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
